@@ -7,7 +7,7 @@ export const fetchJobs = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const result = await getJob();
-      console.log(result);
+      // console.log(result);
       return result;
     } catch (error) {
       return rejectWithValue(error);
